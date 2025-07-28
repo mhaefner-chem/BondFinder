@@ -1,4 +1,4 @@
-#,Element,Ox.-number Z,"bondtype",CN,"Spinstate","Radius R[Å]HoWior Cordero","Crystal Radius CR[Å]Shannon","Ionic Radius IR[Å]Shannon","Covalent Radius[Å]Cordero",Z/R,"charge surface ratio[(Z/R)/4pR2]",Notes,
+#,Element,Ox.-number Z,"bondtype",CN,"Spinstate","Radius RHoWior Cordero","Crystal Radius CRShannon","Ionic Radius IRShannon","Covalent RadiusCordero",Z/R,"charge surface ratio[(Z/R)/4pR2]",Notes,
 1,[OH]-,-1,I,2,,1.18,1.18,1.32,,-0.85,-0.048,,
 2,[OH]-,-1,I,3,,1.20,1.2,1.34,,-0.83,-0.046,,
 3,[OH]-,-1,I,4,,1.21,1.21,1.35,,-0.83,-0.045,,

@@ -50,7 +50,7 @@ class main_window:
         
         
         
-        self.root = create_window("450x350+120+120","BondFinder")
+        self.root = create_window("450x450+120+120","BondFinder")
         self.frame_entry_fields()
         self.frame_upper_buttons()
         self.frame_output()
@@ -351,9 +351,16 @@ class main_window:
             self.text_frame.destroy()
             self.frame_output()
 
+        info_message = "Tips for input: multiple elements, charges, or coordination numbers can be entered, separated by ',' or spaces. In addition, ranges are possible for coordination numbers, e.g. '2-4'"
+        
+        self.info_box = tk.Text(self.root, wrap = "word",height=4)
+        self.info_box.pack(expand=False,side=tk.BOTTOM)
+        self.info_box.insert('end', info_message)
+        self.info_box.config(state='disabled')
+        
         # button for showing the help window
         self._button_help = ttk.Button(self._frame_buttons, text = 'Help', command = lambda : helpbox())
-        self._button_help.pack(side=tk.LEFT,expand=True)
+        self._button_help.pack(side=tk.LEFT,expand=True,fill=tk.X)
         
         def helpbox():
             helpbox = create_window("650x400+120+120", "Help",self.icon)
